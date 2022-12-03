@@ -2,7 +2,7 @@ import pygame as pg, requests
 from solver import solve, valid
 import time # imports
 
-#response = requests.get("https://www.sudoku-solutions.com/")
+#response = requests.get("https://sugoku.herokuapp.com/board?difficulty=easy")
 
 
 pg.init() #initate py.game
@@ -27,7 +27,7 @@ grid = [
     [8, 1, 0, 0, 4, 9, 2, 0, 7]
 ] # predetermined grid used to fill sudoku board
 
-
+#grid = response.json()['board']
 
 class Grid: # grid class
 
